@@ -8,9 +8,6 @@ export default function EmojiGrid() {
         <EmojiItem 
           key={index} 
           symbol={item.symbol} 
-          selected={async (symbol) => {
-            'use server'
-          }} 
         />
       )) }
     </div>

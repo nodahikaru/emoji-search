@@ -7,7 +7,7 @@ interface EmojiProps {
   title?: string,
   symbol: string,
   keywords?: string,
-  selected: (arg0: string) => void
+  selected?: (arg0: string) => void
 }
 
 const EmojiItem : React.FC<EmojiProps> = ({ symbol, selected } : EmojiProps) => {
@@ -17,7 +17,7 @@ const EmojiItem : React.FC<EmojiProps> = ({ symbol, selected } : EmojiProps) => 
 
   const handleClick = async () => {
     setFadeIn(true);
-    await selected(symbol);
+    await selected!(symbol);
     setTimeout(() => {
       setFadeIn(false);
     }, 900)
