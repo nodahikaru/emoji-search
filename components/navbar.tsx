@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
 	return (
-		<nav className="bg-white border-gray-200 dark:bg-gray-900 fixed w-screen top-0 left-0">
+		<nav className="bg-white z-50 border-gray-200 dark:bg-gray-900 fixed w-screen top-0 left-0">
 			<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 			<a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
 					<span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Noda Hikaru</span>
@@ -66,6 +66,9 @@ export default function Navbar() {
 					</li>
 					<li>
 						<Link href="/gitmoji" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Gitmoji</Link>
+					</li>
+					<li>
+						<Link href="/anime" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">My anime</Link>
 					</li>
 				</ul>
 			</div>
