@@ -1,6 +1,17 @@
-export default function AnimeCharacter({...args}: AnimeCharacter) {
+import Link from 'next/link';
+import { useMemo } from 'react';
+
+export default function AnimeCharacter({...args}: AnimeCharacterType) {
+
+  const link = useMemo(() => {
+    return `/anime/${args.id_v2}`
+  }, [args])
+
   return (
-    <a className="max-w-sm h-80 mx-4 my-4 rounded overflow-hidden shadow-lg flex flex-col justify-between cursor-pointer">
+    <Link 
+      className="max-w-sm h-80 mx-4 my-4 rounded overflow-hidden shadow-lg flex flex-col justify-between cursor-pointer"
+      href={link}
+    >
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{args.name}</div>
         <p className="text-gray-700 text-base">
@@ -12,11 +23,11 @@ export default function AnimeCharacter({...args}: AnimeCharacter) {
         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{args.gender}</span>
         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{args.species}</span>
       </div>
-    </a>
+    </Link>
   )
 }
 
-export interface AnimeCharacter {
+export interface AnimeCharacterType {
   id: number,
   id_v2: string,
   name: string,
