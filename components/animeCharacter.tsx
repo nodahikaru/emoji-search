@@ -4,7 +4,7 @@ import { useMemo } from 'react';
 export default function AnimeCharacter({...args}: AnimeCharacterType) {
 
   const link = useMemo(() => {
-    return `/anime/${args.id_v2}`
+    return `/anime/${args.id}`
   }, [args])
 
   return (
