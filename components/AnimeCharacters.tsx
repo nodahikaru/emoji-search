@@ -1,9 +1,8 @@
 'use client'
-import useSWR from 'swr'
+import useSWR from 'swr';
 import AnimeCharacter, { AnimeCharacterType } from "./animeCharacter";
 import { useEffect, useState } from 'react';
-
-const fetcher = (arg : any, ...args:any) => fetch(arg, ...args).then((res) => res.json())
+import { fetcher } from '@/lib/api/api';
 
 export default function AnimeCharacters() {
   
