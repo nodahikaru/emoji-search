@@ -9,7 +9,7 @@ export default function AnimeCharacter({...args}: AnimeCharacterType) {
 
   return (
     <Link 
-      className="max-w-sm h-80 mx-4 my-4 rounded overflow-hidden shadow-lg flex flex-col justify-between cursor-pointer"
+      className="max-w-sm h-80 mx-4 my-4 rounded overflow-hidden shadow-md flex flex-col justify-between cursor-pointer"
       href={link}
     >
       <div className="px-6 py-4">

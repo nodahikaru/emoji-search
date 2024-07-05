@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import useSWR from 'swr';
 import AnimeArtist from './animeArtist';
 
-export default function AnimeArticles() {
+export default function AnimeArtists() {
 
   const { data, error } = useSWR('https://api.nekosapi.com/v3/artists', fetcher);
   const [ artists, setArtists ] = useState<any[]>([]); 
