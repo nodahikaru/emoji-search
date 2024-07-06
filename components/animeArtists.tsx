@@ -16,7 +16,7 @@ export default function AnimeArtists() {
   }, [data])
 
   return (
-    <div className="w-full flex">
+    <div className="w-full flex overflow-auto p-4">
       {artists.map((item) => <AnimeArtist key={item.id} id={item.id} name={item.name} />)}
     </div>
   )

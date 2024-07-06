@@ -24,10 +24,11 @@ export default function AnimeArtist({ id, name } : AnimeArtist) {
 
   if (artist) {
     return (
-      <div className="flex flex-col items-center px-8 shadow-md">
+      <div className="flex flex-col justify-between items-center px-8 shadow mr-2 rounded-md">
         <h3>{artist.artist.name}</h3>
-        <div className="pt-4 flex">
-          <Link href={artist.artist.links[0]}><Icon.Twitter className="w-3" /></Link>
+        <div className="flex">
+          <Link href={artist.artist.links[0]}><Icon.Twitter className="w-4" /></Link>
+          { artist.source && <Link href={artist.source}><Icon.Link2 className="w-4 ml-2" /></Link> }
         </div>
       </div>
     )
