@@ -9,7 +9,7 @@ export default function AnimeTags() {
 
   return (
     <div className="w-full flex flex-wrap p-4">
-      { data && data.count > 0 && data.items.map((item : AnimeTagType) => <AnimeTag id={item.id} name={item.name} description={item.description} is_nsfw={item.is_nsfw} />) }
+      { data && data.count > 0 && data.items.map((item : AnimeTagType) => <AnimeTag key={item.id} id={item.id} name={item.name} description={item.description} is_nsfw={item.is_nsfw} />) }
     </div>
   )
 }
