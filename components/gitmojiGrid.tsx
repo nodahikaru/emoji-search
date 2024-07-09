@@ -6,7 +6,7 @@ export default function GitmojiGrid() {
   return (
     <div className="flex items-center justify-center flex-wrap py-6">
       { data.gitmojis.map((item, index) => (
-        <GitmojiItem emoji={item.emoji} />
+        <GitmojiItem emoji={item.emoji} description={item.description} />
       )) }
     </div>
   )
