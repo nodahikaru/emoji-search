@@ -12,7 +12,7 @@ export interface GitmojiItemType {
 export default function GitmojiItem({ emoji, description, name } : GitmojiItemType) {
 
   const onClick = () => {
-    toast.success('You did it');
+    toast.success('Copied');
   }
 
   return (
