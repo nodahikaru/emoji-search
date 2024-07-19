@@ -1,6 +1,6 @@
 
 
-export default function Crypto() {
+export default function Blog() {
   return (
     <main className="flex bg-white min-h-screen flex-col items-center p-24">
     </main>
