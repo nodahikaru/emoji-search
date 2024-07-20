@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'cdn.nekosapi.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'miro.medium.com'
+      }
     ],
   },
 };
