@@ -30,6 +30,18 @@ const blogs : BlogItemType[] = [
     title: "The 5 most transformative JavaScript features from ES8",
     description: "ES8 was packed with valuable features that transformed the way we write JavaScript. Code became cleaner, easier to write, and upgraded with new capabilities. Let’s check them out and see the ones you missed.",
     imageUrl: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*lHIajzU8WchU9Je5MARYmA.png"
+  },
+  {
+    id: 5,
+    title: "Async Await Is The Worst Thing To Happen To Programming",
+    description: "It’s so good. It captures exactly how I feel about async and await. If you wait for async code your function now has to be async as well. And if there’s any function relying on that function that code also has to be async and on and on and on. Until you reach the top level.",
+    imageUrl: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*fo0H05oTTridLQMn"
+  },
+  {
+    id: 6,
+    title: "You don’t actually NEED if statements (ever)",
+    description: "Sure they’re a nice and easy way to create control flow, but you can write many billions of lines of conditional JS code without a SINGLE if statement. And there are many situations where a different construct shows what you wanna do way more clearly — something we can’t ignore as long we write code for humans.",
+    imageUrl: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*NpXGc-5Vhh6Oiu27FXMB5A.png"
   }
 ]
 
