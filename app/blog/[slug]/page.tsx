@@ -19,8 +19,8 @@ const [ blog, setBlog ] = useState<BlogItemType | undefined>(undefined);
   return (
     <main className="flex bg-white min-h-screen flex-col items-center p-24">
       {blog && <div className="w-full max-w-42 flex flex-col">
-        <div className="w-full">
-          <Image src={blog.imageUrl} fill objectFit="contain" alt={blog.title}/>
+        <div className="w-full h-42">
+          <Image src={blog.imageUrl} fill objectFit="contain" alt={blog.title} className="h-full"/>
         </div>
         </div>}
     </main>
