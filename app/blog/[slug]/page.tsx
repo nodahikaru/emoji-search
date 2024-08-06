@@ -22,6 +22,7 @@ const [ blog, setBlog ] = useState<BlogItemType | undefined>(undefined);
         <div className="w-full">
           <Image src={blog.imageUrl} width="1024" height="420" alt={blog.title} className="text-center"/>
         </div>
+        <h3>{blog.title}</h3>
         <p>{blog.description}</p>
       </div>}
     </main>
